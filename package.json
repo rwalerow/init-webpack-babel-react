@@ -1,0 +1,38 @@
+{
+  "name": "shop-frontend",
+  "version": "0.0.1",
+  "description": "Simple shop web page",
+  "main": "index.js",
+  "repository": "git@bitbucket.org:softwaremill/robert_walerowicz.git",
+  "scripts": {
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --mode development",
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+    "test:watch": "npm run test -- --watch"
+  },
+  "author": "Robert Walerowicz",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.0",
+    "chai": "^4.1.2",
+    "chai-jquery": "^2.0.0",
+    "jquery": "^3.3.1",
+    "jsdom": "^12.0.0",
+    "react-addons-test-utils": "^0.14.7",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.7"
+  },
+  "dependencies": {
+    "@babel/preset-stage-1": "^7.0.0",
+    "lodash": "^4.17.10",
+    "npm": "^6.4.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "5.0.7",
+    "react-router": "^4.3.1",
+    "redux": "^4.0.0"
+  }
+}
